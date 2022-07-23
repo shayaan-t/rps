@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/game.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="container1">
+            <div class="score">
+                <h1>{{message}}</h1>
+                <h2>Computer : </h2>
+                <h2>You : </h2>
+            </div>
+            <div class="image">
+                <img src="../static/Screenshot 2022-07-15 122456.jpg" alt="rock-paper-scissors">
+            </div> <br><br>
+            <form action="/rps" method = "POST">
+                <label for="">Rock</label>
+                <input type="radio" name = "rps" required value="rock">
+
+                <label for="">Paper</label>
+                <input type="radio" name = "rps" value="paper">
+
+                <label for="">Scissors</label>
+                <input type="radio" name = "rps" value="scissors">
+                
+                <button type="submit" >PLAY GAME</button>
+            </form>
+
+            <h2>You Choose <b>{{uc}}</b> </h2>
+            <h2>Computer Choose <b>{{cc}}</b> </h2>
+        </div>
+        <div class="container2">
+            <h1>Rock Paper Scissor</h1>
+            <div class="image2">
+                <img src="../static/python logo.png" alt = "python logo">
+            </div>
+            <h1>WITH PYTHON</h1>
+        </div>
+    </div>
+
+</body>
+</html>
