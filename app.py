@@ -3,7 +3,7 @@ from pickle import TRUE
 from flask import Flask,render_template,session,request
 import random
 app = Flask(__name__)
-
+@app.route("/")
 @app.route("/rps", methods = ["GET","POST"])
 def rps():
     if request.method == "GET":
